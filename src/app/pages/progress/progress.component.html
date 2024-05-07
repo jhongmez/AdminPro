@@ -1,3 +1,4 @@
+<!-- Componente Padre -->
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -34,7 +35,7 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incrementador (valorSalida)="progreso1 = $event" [progreso]="progreso1"></app-incrementador>
+                <app-incrementador (valorSalida)="progreso1 = $event" [progreso]="progreso1" [btnClass]="'btn-info'"></app-incrementador>
             </div>
         </div>
     </div>
@@ -42,7 +43,7 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incrementador (valorSalida)="progreso2 = $event" [progreso]="progreso2"></app-incrementador>
+                <app-incrementador (valorSalida)="progreso2 = $event" [progreso]="progreso2" [btnClass]="'btn-danger'"></app-incrementador>
             </div>
         </div>
     </div>
