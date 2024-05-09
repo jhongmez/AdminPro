@@ -3,8 +3,13 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-				<canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" height="100px" width="100%">
-				</canvas>
+				<h4 class="card-title">
+                    Sales
+                </h4>
+				<div class="d-block">
+					<canvas baseChart [legend]="true" [data]="doughnutChartData" [type]="doughnutChartType"  style="height: 100px;">
+					</canvas>
+				</div>
 			</div>
 		</div>
 	</div>
