@@ -7,38 +7,16 @@ import { ChartData, ChartEvent, ChartType } from 'chart.js';
   styleUrls: ['./grafica1.component.css']
 })
 export class Grafica1Component {
-  // Doughnut
-  public doughnutChartLabels: string[] = [
-	'Download Sales',
-	'In-Store Sales',
-	'Mail-Order Sales',
-  ];
-  public doughnutChartData: ChartData<'doughnut'> = {
-	labels: this.doughnutChartLabels,
-	datasets: [
-		{ data: [350, 450, 100] },
-	],
-  };
-  public doughnutChartType: ChartType = 'doughnut';
+	// Doughnut
+	public labels1: string[] = [
+		'Pan',
+		'Tacos',
+		'gaseosa',
+	];
 
-  // events
-  public chartClicked({
-	event,
-	active,
-  }: {
-		event: ChartEvent;
-		active: object[];
-  }): void {
-		console.log(event, active);
-  }
-
-	public chartHovered({
-	event,
-	active,
-	}: {
-		event: ChartEvent;
-		active: object[];
-	}): void {
-		console.log(event, active);
-	}
+	public data1: ChartData<'doughnut'> = {
+		labels: this.labels1, datasets: [
+			{ data: [10, 15, 40] },
+		],
+	};
 }

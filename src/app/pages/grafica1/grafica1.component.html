@@ -1,16 +1,14 @@
-<!-- Componente Padre -->
 <div class="row">
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-				<h4 class="card-title">
-                    Sales
-                </h4>
-				<div class="d-block">
-					<canvas baseChart [legend]="true" [data]="doughnutChartData" [type]="doughnutChartType"  style="height: 100px;">
-					</canvas>
-				</div>
-			</div>
-		</div>
+	<div class="col-6">
+		<app-dona title="Ventas"></app-dona>
+	</div>
+	<div class="col-6">
+		<app-dona title="Compras" [label]="labels1" [data]="data1"></app-dona>
+	</div>
+	<div class="col-6">
+		<app-dona title="Cambios"></app-dona>
+	</div>
+	<div class="col-6">
+		<app-dona title="Compras 2"></app-dona>
 	</div>
 </div>
