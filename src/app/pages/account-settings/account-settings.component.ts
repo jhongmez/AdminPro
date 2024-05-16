@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AccountSettingsComponent implements OnInit {
 	
 	public linkTheme = document.querySelector("#theme");
-	public links!: any;
+	public links!: NodeListOf<Element>;
 
 	ngOnInit(): void {
 		this.links = document.querySelectorAll(".selector")
